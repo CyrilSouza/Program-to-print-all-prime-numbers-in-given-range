@@ -1,0 +1,41 @@
+import java.util.*;
+
+class Solution{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Print the start of the range:");
+        int low=sc.nextInt();
+        System.out.println("Print the end of the range:");
+        int high=sc.nextInt();
+        if(low<high){
+            while(low<high){
+            boolean flag =false;
+            
+            for(int i=2;i<=low/2;i++){
+                if(low%i==0){
+                    flag=true;
+                    break;
+                }
+            }
+            if(!flag && low !=0 && low!=0)
+                
+                System.out.println(low+" ");
+            low++;
+            }
+        }
+        else{
+            System.out.println("Provide valid input");
+        }
+    }
+}
+          
+        
+            
+        
+        
+        
+        
+    
+
+    
+    
